@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07080d" />
+  <meta name="description" content="Portfolio de diseño y desarrollo web especializado en tiendas online modernas, rápidas y orientadas a vender." />
+  <title>BT Web — Diseño y Desarrollo Web</title>
+  <style>
+:root{--bg:#07080d;--panel:#0e1018;--text:#f5f6fb;--muted:#979bab;--line:rgba(255,255,255,.11);--purple:#7c5cff;--cyan:#39d9ff;--lime:#b7ff5e;--ease:cubic-bezier(.2,.75,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Manrope,sans-serif;overflow-x:hidden}.container{width:min(1180px,calc(100% - 40px));margin:auto}a{color:inherit;text-decoration:none}button{font:inherit}.noise{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}.cursor-glow{position:fixed;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(124,92,255,.12),transparent 65%);transform:translate(-50%,-50%);pointer-events:none;z-index:0}#webgl{position:absolute;top:0;left:0;width:100%;height:900px;pointer-events:none;opacity:.6}.nav-wrap{position:fixed;inset:0 0 auto;z-index:40;padding:18px 0}.nav{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:rgba(8,9,14,.66);backdrop-filter:blur(18px);box-shadow:0 18px 50px rgba(0,0,0,.25)}.brand{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk';font-size:18px;font-weight:700;letter-spacing:-.03em}.brand>span:last-child span,.footer-brand span{color:var(--purple)}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--purple),var(--cyan));color:#fff;box-shadow:0 0 30px rgba(124,92,255,.35)}.nav-links{display:flex;gap:34px}.nav-links a{font-size:13px;color:#c9ccda;transition:.3s}.nav-links a:hover{color:#fff}.nav-cta{font-size:13px;padding:12px 17px;border-radius:11px;background:#fff;color:#08090d;font-weight:700}.hero{min-height:900px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;padding-top:100px;position:relative;z-index:1}.eyebrow,.kicker{font-size:11px;font-weight:800;letter-spacing:.17em;color:#c2c5d1}.eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:24px}.eyebrow span{width:24px;height:1px;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}.hero h1{font-family:'Space Grotesk';font-size:clamp(54px,6vw,86px);line-height:.98;letter-spacing:-.065em}.gradient-text{background:linear-gradient(90deg,#fff 0%,#a89aff 40%,#59e6ff 80%);-webkit-background-clip:text;color:transparent}.hero-copy>p{max-width:580px;color:var(--muted);font-size:17px;line-height:1.75;margin:30px 0}.hero-actions{display:flex;gap:12px}.btn{display:inline-flex;align-items:center;gap:22px;padding:16px 20px;border-radius:13px;font-size:13px;font-weight:800;transition:transform .25s}.btn-primary{background:#fff;color:#090a0e}.btn-secondary{border:1px solid var(--line);background:rgba(255,255,255,.03)}.hero-meta{display:flex;gap:45px;margin-top:56px}.hero-meta div{display:flex;flex-direction:column}.hero-meta strong{font-family:'Space Grotesk';font-size:24px}.hero-meta span{font-size:11px;color:var(--muted);margin-top:4px}.hero-visual{height:650px;position:relative;perspective:1200px}.device{position:absolute;width:480px;height:365px;left:50%;top:51%;transform:translate(-50%,-50%) rotateY(-10deg) rotateX(6deg);border:1px solid rgba(255,255,255,.23);border-radius:18px;background:#11131c;box-shadow:-35px 45px 100px rgba(0,0,0,.65),0 0 80px rgba(124,92,255,.15);overflow:hidden;transition:transform .2s}.device-bar{height:35px;display:flex;align-items:center;gap:6px;padding:0 12px;background:#171925;border-bottom:1px solid rgba(255,255,255,.08)}.device-bar span{width:7px;height:7px;border-radius:50%;background:#565967}.device-bar em{font-style:normal;font-size:8px;color:#707487;margin-left:85px}.device-screen{position:relative;height:calc(100% - 35px);background:radial-gradient(circle at 72% 45%,#2b1f68 0%,#10131f 38%,#090a0f 72%);overflow:hidden}.screen-nav{display:flex;align-items:center;gap:18px;padding:22px 28px;position:relative;z-index:2}.screen-nav b{margin-right:auto;font-family:'Space Grotesk'}.screen-nav i{width:30px;height:3px;border-radius:4px;background:#333747}.screen-copy{position:relative;z-index:3;padding:32px 35px}.screen-copy small{font-size:7px;letter-spacing:.18em;color:#8fdfff}.screen-copy h3{font-family:'Space Grotesk';font-size:37px;line-height:1.03;margin:12px 0 20px;letter-spacing:-.05em}.screen-copy button{border:0;border-radius:20px;padding:9px 18px;background:#fff;font-size:9px}.screen-sphere{position:absolute;width:230px;height:230px;border-radius:50%;right:-20px;bottom:-30px;background:radial-gradient(circle at 32% 28%,#fff, #66dfff 11%,#7d5cff 35%,#241a55 68%,#0c0e16 72%);box-shadow:0 0 80px rgba(68,202,255,.35);animation:pulse 5s ease-in-out infinite}.screen-grid,.cta-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:35px 35px;mask-image:linear-gradient(to right,transparent,#000)}.floating-card{position:absolute;border:1px solid rgba(255,255,255,.18);background:rgba(18,20,30,.72);backdrop-filter:blur(16px);box-shadow:0 25px 60px rgba(0,0,0,.45);z-index:3}.card-code{width:235px;left:-8px;top:115px;border-radius:14px;padding:14px;animation:float 5s ease-in-out infinite}.mini-top{display:flex;gap:5px;margin-bottom:18px}.mini-top i{width:6px;height:6px;border-radius:50%;background:#515465}.card-code pre{font:9px/1.9 monospace;color:#c8ccdb}.card-code pre span{color:#68dcff}.card-code pre b{color:#b89dff}.card-stat{width:175px;right:-5px;bottom:110px;border-radius:16px;padding:18px;animation:float 6s ease-in-out -2s infinite}.card-stat span{font-size:9px;color:var(--muted)}.card-stat strong{display:block;font:38px 'Space Grotesk';margin:3px 0 10px}.progress{height:4px;background:#292c38;border-radius:5px;overflow:hidden}.progress i{display:block;width:92%;height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan))}.float-badge{position:absolute;padding:10px 13px;border-radius:30px;background:#11131a;border:1px solid var(--line);font-size:10px;font-weight:700;box-shadow:0 12px 30px #000;animation:float 4s ease-in-out infinite}.badge-one{right:40px;top:95px}.badge-two{left:80px;bottom:95px;color:#0b0c10;background:var(--lime)}.orbit{position:absolute;border:1px solid rgba(124,92,255,.2);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);animation:spin 20s linear infinite}.orbit:after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px var(--cyan);top:20%;left:4%}.orbit-one{width:570px;height:570px}.orbit-two{width:440px;height:440px;animation-direction:reverse;animation-duration:14s}.marquee{border-block:1px solid var(--line);overflow:hidden;background:#0a0b11}.marquee-track{width:max-content;display:flex;align-items:center;gap:30px;padding:17px 0;animation:marquee 28s linear infinite}.marquee span{font:700 12px 'Space Grotesk';letter-spacing:.15em;color:#a5a8b7}.marquee i{color:var(--purple);font-style:normal}.section{padding:140px 0}.section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:70px}.section-head h2,.process h2{font:600 clamp(42px,5vw,68px)/1.04 'Space Grotesk';letter-spacing:-.055em;margin-top:15px}.section-head>p{max-width:390px;color:var(--muted);line-height:1.7;font-size:14px}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.project-card{position:relative;border:1px solid var(--line);border-radius:24px;background:#0c0e15;overflow:hidden;transition:transform .2s, border-color .3s;transform-style:preserve-3d}.project-card.large{grid-column:1/-1}.project-card.wide{grid-column:1/-1}.project-link{position:absolute;inset:0;z-index:6}.project-visual{height:430px;position:relative;overflow:hidden}.large .project-visual{height:570px}.wide .project-visual{height:450px}.project-info{display:flex;justify-content:space-between;align-items:flex-end;padding:25px 28px 29px;border-top:1px solid var(--line);position:relative;z-index:3;background:#0c0e15}.project-info span{font-size:9px;letter-spacing:.15em;color:#6f7486}.project-info h3{font:600 24px 'Space Grotesk';margin:7px 0}.project-info p{font-size:12px;color:var(--muted)}.round-arrow{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;font-weight:400;transition:.3s}.project-card:hover .round-arrow{background:#fff;color:#090a0e;transform:rotate(45deg)}.visual-rosario{background:radial-gradient(circle at 50% 40%,#28376c,#111629 50%,#080a10)}.mock-browser{width:82%;height:79%;position:absolute;left:50%;top:54%;transform:translate(-50%,-50%) rotateX(4deg);border-radius:13px;overflow:hidden;border:1px solid rgba(255,255,255,.24);box-shadow:0 45px 85px rgba(0,0,0,.65)}.mock-bar{height:28px;background:#e8eaf0;color:#1b1d24;display:flex;align-items:center;gap:5px;padding:0 10px}.mock-bar i{width:6px;height:6px;background:#aeb2be;border-radius:50%}.mock-bar span{font-size:7px;margin-left:34%;color:#777b87}.store-ui{height:calc(100% - 28px);position:relative;overflow:hidden}.dark-ui{background:radial-gradient(circle at 80% 60%,#242e4d,#050609 50%)}.ui-nav{display:flex;justify-content:space-between;padding:20px 25px;font-size:8px;color:#aaa}.ui-nav b{color:#fff}.ui-hero{padding:65px 40px;position:relative;z-index:2}.ui-hero small{font-size:7px;color:#74d4ff;letter-spacing:.15em}.ui-hero h3{font:500 37px/1.05 'Space Grotesk';margin:10px 0 18px}.ui-hero h3 em{font-style:normal;color:#8a91a6}.ui-hero button{border:0;padding:9px 15px;border-radius:20px;font-size:8px}.phone-shape{position:absolute;width:125px;height:270px;border:3px solid #434a61;border-radius:26px;background:linear-gradient(140deg,#858da3,#171b25 35%,#010204 55%,#6c7488);right:80px;bottom:-65px;transform:rotate(15deg);box-shadow:-20px 20px 50px #000}.phone-b{right:-12px;bottom:-100px;transform:rotate(26deg);filter:brightness(.6)}.visual-rc{background:radial-gradient(circle at 50% 30%,#454859,#181a23 45%,#0a0b10)}.mock-phone{position:absolute;width:220px;height:390px;border:5px solid #181921;border-radius:38px;background:#090a0d;left:50%;top:55%;transform:translate(-50%,-50%) rotate(-7deg);box-shadow:30px 40px 80px #000;overflow:hidden}.notch{position:absolute;width:75px;height:19px;border-radius:15px;background:#020204;left:50%;top:7px;transform:translateX(-50%);z-index:2}.mobile-ui{height:100%;padding:52px 22px;background:linear-gradient(155deg,#f5f5f3,#babcc4);color:#111}.mobile-ui small{font-size:7px;font-weight:800}.mobile-ui h4{font:600 23px/1.08 'Space Grotesk';margin:25px 0}.product-mini{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.6);padding:12px;border-radius:15px}.product-mini div{width:40px;height:70px;border-radius:8px;background:linear-gradient(145deg,#fafafa,#777);box-shadow:5px 7px 12px rgba(0,0,0,.2)}.product-mini span{font-size:8px;line-height:1.6}.product-mini b{font-size:10px}.mobile-ui button{width:100%;margin-top:22px;padding:10px;border:0;border-radius:20px;background:#111;color:#fff;font-size:8px}.visual-green{background:linear-gradient(135deg,#172218,#070b08)}.green-scene{position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(148,255,125,.2),transparent 38%)}.green-logo{position:absolute;left:35px;top:30px;font:700 17px 'Space Grotesk';letter-spacing:.06em}.green-logo span{color:#8ceb72}.glass-panel{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:220px;padding:27px;border:1px solid rgba(255,255,255,.15);border-radius:24px;background:rgba(255,255,255,.07);backdrop-filter:blur(12px);box-shadow:0 30px 70px rgba(0,0,0,.5)}.glass-panel small{font-size:7px;color:#a6ff91}.glass-panel h4{font:600 35px/1.02 'Space Grotesk';margin:12px 0 20px}.glass-panel i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#a6ff91;color:#0c130c}.leaf{position:absolute;width:170px;height:75px;border-radius:100% 0 100% 0;background:linear-gradient(120deg,#76d365,#203c23);filter:blur(.2px);box-shadow:0 20px 45px #000}.leaf-1{right:-40px;top:80px;transform:rotate(-35deg)}.leaf-2{left:-55px;bottom:20px;transform:rotate(145deg)}.visual-fsa{background:linear-gradient(135deg,#0e1018,#171c32);display:flex;align-items:center;padding:50px 70px}.fsa-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,#615bff44,transparent 65%);right:0}.fsa-copy{position:relative;z-index:2}.fsa-copy small{font-size:8px;color:#7bd9ff;letter-spacing:.18em}.fsa-copy h4{font:600 45px/1.03 'Space Grotesk';margin:14px 0 25px}.fsa-copy div{display:flex;gap:8px}.fsa-copy span{font-size:8px;border:1px solid var(--line);padding:8px 12px;border-radius:20px}.fsa-products{position:absolute;right:12%;bottom:-80px;width:410px;height:470px}.fsa-phone{position:absolute;width:145px;height:310px;border-radius:30px;background:linear-gradient(145deg,#eee,#6d7282 20%,#10131d 45%,#d8d8dc);border:3px solid #b9bdc8;box-shadow:-25px 30px 60px #000}.fsa-phone:before{content:'';position:absolute;width:55px;height:55px;border-radius:17px;background:#17191f;top:13px;left:13px}.fsa-phone.one{left:0;top:80px;transform:rotate(-17deg)}.fsa-phone.two{left:110px;top:30px;z-index:2;transform:rotate(-3deg);background:linear-gradient(145deg,#dfd8cf,#8d8377 30%,#1d1c1c 55%,#cfc4b7)}.fsa-phone.three{left:225px;top:95px;transform:rotate(12deg);filter:brightness(.7)}.services{background:#f1f1f3;color:#0b0c10}.services .kicker{color:#555a68}.services .section-head>p{color:#606471}.service-list{border-top:1px solid #cfd1d7}.service-item{display:grid;grid-template-columns:80px 1.2fr 1fr 50px;align-items:center;padding:31px 0;border-bottom:1px solid #cfd1d7;transition:.3s}.service-item:hover{padding-left:15px}.service-item>span{font-size:10px;color:#898d98}.service-item h3{font:600 28px 'Space Grotesk'}.service-item p{font-size:13px;color:#686c77}.service-item b{display:grid;place-items:center;width:40px;height:40px;border:1px solid #c2c5cc;border-radius:50%}.process-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:120px}.process-sticky{position:sticky;top:140px;align-self:start}.process h2 span{color:var(--purple)}.process-sticky p{color:var(--muted);margin-top:24px}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:75px 1fr;padding:45px 0;border-bottom:1px solid var(--line)}.step>span{font-size:10px;color:#686c7d}.step h3{font:600 28px 'Space Grotesk';margin-bottom:10px}.step p{color:var(--muted);font-size:13px;line-height:1.7;max-width:450px}.cta-section{padding-bottom:120px}.cta-card{height:520px;border-radius:30px;border:1px solid rgba(255,255,255,.16);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#0e1018}.cta-card>span{font-size:9px;letter-spacing:.2em;color:#aeb2bf;position:relative;z-index:2}.cta-card h2{font:600 clamp(58px,8vw,100px)/.92 'Space Grotesk';letter-spacing:-.07em;margin:18px 0 38px;position:relative;z-index:2}.cta-card h2 em{font-style:normal;background:linear-gradient(90deg,#9b85ff,#4ae0ff);-webkit-background-clip:text;color:transparent}.cta-button{position:relative;z-index:2;background:#fff;color:#090a0e;padding:15px 20px;border-radius:12px;font-size:12px;font-weight:800;display:flex;gap:45px}.cta-orb{position:absolute;width:550px;height:550px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#64e3ff,#7858ff 22%,#241853 48%,transparent 70%);filter:blur(2px);opacity:.55;bottom:-370px;animation:pulse 6s ease-in-out infinite}.footer{border-top:1px solid var(--line);height:130px;display:flex;align-items:center;justify-content:space-between}.footer-brand{font:700 23px 'Space Grotesk'}.footer-links{display:flex;gap:25px}.footer-links a,.footer p{font-size:10px;color:var(--muted)}.reveal{opacity:1;transform:none}.js .reveal{opacity:0;transform:translateY(35px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.js .reveal.visible{opacity:1;transform:none}@keyframes float{50%{transform:translateY(-14px)}}@keyframes pulse{50%{transform:scale(1.06);filter:brightness(1.12)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes marquee{to{transform:translateX(-50%)}}
+@media(max-width:900px){.nav-links{display:none}.hero{grid-template-columns:1fr;padding-top:160px}.hero-copy{text-align:center}.hero-copy>p{margin-inline:auto}.hero-actions,.hero-meta{justify-content:center}.hero-visual{height:600px}.section-head{align-items:flex-start;flex-direction:column;gap:25px}.project-grid{grid-template-columns:1fr}.project-card,.project-card.large,.project-card.wide{grid-column:auto}.project-visual,.large .project-visual,.wide .project-visual{height:430px}.process-layout{grid-template-columns:1fr;gap:60px}.process-sticky{position:relative;top:0}.service-item{grid-template-columns:50px 1fr 40px}.service-item p{display:none}.fsa-products{right:-10%}.footer{flex-wrap:wrap}.footer-links{order:3;width:100%;justify-content:center}}@media(max-width:600px){.container{width:min(100% - 24px,1180px)}.nav{height:58px}.nav-cta{padding:10px 12px}.hero{min-height:auto;padding-top:145px}.hero h1{font-size:51px}.hero-copy>p{font-size:14px}.hero-actions{flex-direction:column}.hero-meta{gap:22px}.hero-meta strong{font-size:20px}.hero-meta span{font-size:9px}.hero-visual{height:480px}.device{width:330px;height:255px}.screen-copy{padding:20px}.screen-copy h3{font-size:27px}.screen-sphere{width:165px;height:165px}.card-code{width:175px;left:-10px;top:80px}.card-stat{width:140px;right:-5px;bottom:60px}.orbit-one{width:400px;height:400px}.orbit-two{width:320px;height:320px}.section{padding:95px 0}.section-head{margin-bottom:42px}.section-head h2,.process h2{font-size:42px}.project-info{padding:20px;align-items:center}.project-info h3{font-size:20px}.project-info p{display:none}.project-visual,.large .project-visual,.wide .project-visual{height:330px}.mock-browser{width:94%;height:78%}.ui-hero{padding:45px 22px}.ui-hero h3{font-size:26px}.phone-shape{right:25px;width:100px;height:220px}.fsa-copy h4{font-size:31px}.visual-fsa{padding:30px}.fsa-products{transform:scale(.65);right:-38%;bottom:-130px}.service-item h3{font-size:23px}.cta-card{height:420px}.cta-card h2{font-size:58px}.footer{height:160px;justify-content:center;gap:30px}.footer p{width:100%;text-align:center}.cursor-glow{display:none}}
+
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas id="webgl"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <span class="brand-mark">B</span>
+        <span>BT<span>WEB</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+      </div>
+      <a class="nav-cta magnetic" href="https://instagram.com/btarratweb" target="_blank" rel="noopener">Hablemos <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> Diseño web que se siente diferente</div>
+        <h1>Creo sitios que<br><span class="gradient-text">venden, impactan</span><br>y se recuerdan.</h1>
+        <p>Diseño y desarrollo experiencias digitales modernas, rápidas y optimizadas para convertir visitas en consultas y ventas.</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary magnetic">Ver proyectos <span>↓</span></a>
+          <a href="https://instagram.com/btarratweb" target="_blank" rel="noopener" class="btn btn-secondary magnetic">Solicitar presupuesto <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>04+</strong><span>Proyectos publicados</span></div>
+          <div><strong>100%</strong><span>Responsive</span></div>
+          <div><strong>24/7</strong><span>Tu negocio online</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="150">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="floating-card card-code" data-float="1">
+          <div class="mini-top"><i></i><i></i><i></i></div>
+          <pre><span>&lt;section</span> class=<b>"impact"</b><span>&gt;</span>
+  ideas → resultados
+<span>&lt;/section&gt;</span></pre>
+        </div>
+        <div class="device" id="device">
+          <div class="device-bar"><span></span><span></span><span></span><em>btweb.studio</em></div>
+          <div class="device-screen">
+            <div class="screen-nav"><b>BT.</b><i></i><i></i><i></i></div>
+            <div class="screen-copy">
+              <small>NUEVA EXPERIENCIA</small>
+              <h3>Tu marca,<br>en otro nivel.</h3>
+              <button>Explorar</button>
+            </div>
+            <div class="screen-sphere"></div>
+            <div class="screen-grid"></div>
+          </div>
+        </div>
+        <div class="floating-card card-stat" data-float="2">
+          <span>Performance</span>
+          <strong>98</strong>
+          <div class="progress"><i></i></div>
+        </div>
+        <div class="float-badge badge-one">✦ UI/UX</div>
+        <div class="float-badge badge-two">3D</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>DISEÑO WEB</span><i>✦</i><span>E-COMMERCE</span><i>✦</i><span>EXPERIENCIAS 3D</span><i>✦</i><span>RESPONSIVE</span><i>✦</i><span>CONVERSIÓN</span><i>✦</i>
+        <span>DISEÑO WEB</span><i>✦</i><span>E-COMMERCE</span><i>✦</i><span>EXPERIENCIAS 3D</span><i>✦</i><span>RESPONSIVE</span><i>✦</i><span>CONVERSIÓN</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="projects section container" id="proyectos">
+      <div class="section-head reveal">
+        <div><span class="kicker">PROYECTOS SELECCIONADOS</span><h2>Trabajo real.<br>Resultados visibles.</h2></div>
+        <p>Cada proyecto combina identidad, experiencia de usuario y una estructura pensada para generar consultas.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card large reveal tilt-card">
+          <a href="https://iphonestorerosario.com/" target="_blank" rel="noopener" class="project-link" aria-label="Abrir iPhone Store Rosario"></a>
+          <div class="project-visual visual-rosario">
+            <div class="mock-browser">
+              <div class="mock-bar"><i></i><i></i><i></i><span>iphonestorerosario.com</span></div>
+              <div class="store-ui dark-ui">
+                <div class="ui-nav"><b> iPhone Store</b><span>Sellados &nbsp; Usados &nbsp; Gaming</span></div>
+                <div class="ui-hero"><small>TIENDA OFICIAL ROSARIO</small><h3>iPhone<br><em>Seminuevos & Sellados</em></h3><button>Ver productos</button></div>
+                <div class="phone-shape phone-a"></div><div class="phone-shape phone-b"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info"><div><span>01 / E-COMMERCE</span><h3>iPhone Store Rosario</h3><p>Catálogo dinámico, carrito de compras y pedidos por WhatsApp.</p></div><b class="round-arrow">↗</b></div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-delay="80">
+          <a href="https://iphoneclubriocuarto.com/" target="_blank" rel="noopener" class="project-link" aria-label="Abrir iPhone Club Río Cuarto"></a>
+          <div class="project-visual visual-rc">
+            <div class="mock-phone"><div class="notch"></div><div class="mobile-ui"><small>IPHONE CLUB RC</small><h4>La experiencia Apple<br>que merecés.</h4><div class="product-mini"><div></div><span>iPhone 17 Pro<br><b>USD 1400</b></span></div><button>Ver colección</button></div></div>
+          </div>
+          <div class="project-info"><div><span>02 / TIENDA ONLINE</span><h3>iPhone Club Río Cuarto</h3><p>Experiencia premium con catálogo filtrable y diseño mobile-first.</p></div><b class="round-arrow">↗</b></div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-delay="120">
+          <a href="https://tiendagreenpe.com/" target="_blank" rel="noopener" class="project-link" aria-label="Abrir Tienda Green PE"></a>
+          <div class="project-visual visual-green">
+            <div class="green-scene"><div class="leaf leaf-1"></div><div class="leaf leaf-2"></div><div class="green-logo">GREEN<span>PE</span></div><div class="glass-panel"><small>TIENDA ONLINE</small><h4>Natural.<br>Simple.<br>Digital.</h4><i>→</i></div></div>
+          </div>
+          <div class="project-info"><div><span>03 / BRAND EXPERIENCE</span><h3>Tienda Green PE</h3><p>Identidad visual limpia y experiencia de compra directa.</p></div><b class="round-arrow">↗</b></div>
+        </article>
+
+        <article class="project-card wide reveal tilt-card" data-delay="160">
+          <a href="https://cuentar57-cmd.github.io/AppleStore.FSA/" target="_blank" rel="noopener" class="project-link" aria-label="Abrir Apple Store FSA"></a>
+          <div class="project-visual visual-fsa">
+            <div class="fsa-glow"></div>
+            <div class="fsa-copy"><small>APPLE STORE FSA</small><h4>Stock actualizado.<br>Compra simple.</h4><div><span>iPhone</span><span>Gaming</span><span>Smart TV</span></div></div>
+            <div class="fsa-products"><div class="fsa-phone one"></div><div class="fsa-phone two"></div><div class="fsa-phone three"></div></div>
+          </div>
+          <div class="project-info"><div><span>04 / CATÁLOGO DIGITAL</span><h3>Apple Store FSA</h3><p>Gran catálogo de productos con categorías y contacto directo con vendedores.</p></div><b class="round-arrow">↗</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="kicker">LO QUE HAGO</span><h2>No hago “una web”.<br>Construyo una experiencia.</h2></div>
+          <p>Desde el primer boceto hasta la publicación, cada decisión tiene una función concreta.</p>
+        </div>
+        <div class="service-list">
+          <div class="service-item reveal"><span>01</span><h3>Landing pages</h3><p>Páginas enfocadas en una oferta, servicio o campaña.</p><b>↗</b></div>
+          <div class="service-item reveal"><span>02</span><h3>Tiendas online</h3><p>Catálogos, filtros, carritos y ventas por WhatsApp.</p><b>↗</b></div>
+          <div class="service-item reveal"><span>03</span><h3>Diseño UI/UX</h3><p>Interfaces claras, atractivas y fáciles de recorrer.</p><b>↗</b></div>
+          <div class="service-item reveal"><span>04</span><h3>Animaciones & 3D</h3><p>Interacciones que elevan la percepción de tu marca.</p><b>↗</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section container" id="proceso">
+      <div class="process-layout">
+        <div class="process-sticky reveal"><span class="kicker">MI PROCESO</span><h2>De una idea<br>a una web que<br><span>funciona.</span></h2><p>Un proceso simple, claro y sin vueltas.</p></div>
+        <div class="steps">
+          <article class="step reveal"><span>01</span><div><h3>Descubrimiento</h3><p>Entiendo tu negocio, tus clientes y qué querés lograr con la web.</p></div></article>
+          <article class="step reveal"><span>02</span><div><h3>Diseño</h3><p>Defino la estructura, identidad visual y experiencia de navegación.</p></div></article>
+          <article class="step reveal"><span>03</span><div><h3>Desarrollo</h3><p>Convierto el diseño en una web rápida, responsive y funcional.</p></div></article>
+          <article class="step reveal"><span>04</span><div><h3>Lanzamiento</h3><p>Publicamos, revisamos cada detalle y la dejamos lista para crecer.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section container reveal">
+      <div class="cta-card">
+        <div class="cta-orb"></div><div class="cta-grid"></div>
+        <span>¿TENÉS UN PROYECTO EN MENTE?</span>
+        <h2>Hagamos algo<br><em>increíble.</em></h2>
+        <a href="https://instagram.com/btarratweb" target="_blank" rel="noopener" class="cta-button magnetic">Contame tu idea <b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-brand">BT<span>WEB</span></div>
+    <div class="footer-links"><a href="#inicio">Inicio</a><a href="#proyectos">Proyectos</a><a href="https://instagram.com/btarratweb" target="_blank" rel="noopener">Instagram</a></div>
+    <p>© 2026 — Diseño & desarrollo con intención.</p>
+  </footer>
+
+  <script>
+const revealItems = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+  if(entry.isIntersecting){
+    const delay = entry.target.dataset.delay || 0;
+    setTimeout(() => entry.target.classList.add('visible'), delay);
+    observer.unobserve(entry.target);
+  }
+}), {threshold:.12});
+revealItems.forEach(el => observer.observe(el));
+
+const glow = document.querySelector('.cursor-glow');
+window.addEventListener('pointermove', e => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+
+const device = document.querySelector('#device');
+const heroVisual = document.querySelector('.hero-visual');
+heroVisual?.addEventListener('pointermove', e => {
+  const r = heroVisual.getBoundingClientRect();
+  const x = (e.clientX-r.left)/r.width-.5;
+  const y = (e.clientY-r.top)/r.height-.5;
+  device.style.transform = `translate(-50%,-50%) rotateY(${x*18-8}deg) rotateX(${-y*14+5}deg)`;
+});
+heroVisual?.addEventListener('pointerleave',()=>device.style.transform='translate(-50%,-50%) rotateY(-10deg) rotateX(6deg)');
+
+document.querySelectorAll('.tilt-card').forEach(card => {
+  card.addEventListener('pointermove', e => {
+    const r = card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform=`perspective(900px) rotateX(${-y*3}deg) rotateY(${x*3}deg) translateY(-4px)`;
+    card.style.borderColor='rgba(255,255,255,.25)';
+  });
+  card.addEventListener('pointerleave',()=>{card.style.transform='';card.style.borderColor='';});
+});
+
+document.querySelectorAll('.magnetic').forEach(el => {
+  el.addEventListener('pointermove',e=>{
+    const r=el.getBoundingClientRect();
+    el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.12}px,${(e.clientY-r.top-r.height/2)*.12}px)`;
+  });
+  el.addEventListener('pointerleave',()=>el.style.transform='');
+});
+
+// Fondo animado sin librerías externas
+const canvas = document.querySelector('#webgl');
+if (canvas) {
+  const ctx = canvas.getContext('2d');
+  let w = 0, h = 900, dpr = 1;
+  const particles = Array.from({length: 90}, () => ({
+    x: Math.random(), y: Math.random(), z: Math.random(),
+    s: Math.random() * 1.5 + .4, v: Math.random() * .0007 + .0002
+  }));
+  function resizeCanvas(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = window.innerWidth; h = 900;
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  function draw(t){
+    ctx.clearRect(0,0,w,h);
+    const gx = w * .78, gy = 390;
+    const gradient = ctx.createRadialGradient(gx,gy,10,gx,gy,300);
+    gradient.addColorStop(0,'rgba(124,92,255,.16)');
+    gradient.addColorStop(.45,'rgba(57,217,255,.07)');
+    gradient.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle = gradient; ctx.fillRect(0,0,w,h);
+
+    ctx.save();
+    ctx.translate(gx, gy);
+    ctx.rotate(t * .00012);
+    ctx.strokeStyle='rgba(124,92,255,.14)';
+    ctx.lineWidth=1;
+    for(let r=80;r<=210;r+=32){
+      ctx.beginPath();
+      for(let a=0;a<=Math.PI*2+.05;a+=.05){
+        const wobble=Math.sin(a*3+t*.001+r)*10;
+        const x=Math.cos(a)*(r+wobble);
+        const y=Math.sin(a)*(r*.52+wobble*.25);
+        a===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+      }
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    particles.forEach(p=>{
+      p.y -= p.v; if(p.y < -.05){p.y=1.05;p.x=Math.random()}
+      const x=p.x*w, y=p.y*h;
+      ctx.beginPath(); ctx.arc(x,y,p.s,0,Math.PI*2);
+      ctx.fillStyle='rgba(109,223,255,.42)'; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  resizeCanvas(); addEventListener('resize',resizeCanvas); requestAnimationFrame(draw);
+}
+
+  </script>
+</body>
+</html>
